@@ -81,12 +81,8 @@ controller.on('rtm_close', function (bot) {
  */
 // BEGIN EDITING HERE!
 
-controller.on('bot_channel_join', function (bot, message) {
-    bot.reply(message, "I'm here!")
-});
-
-controller.hears('hello', 'direct_message', function (bot, message) {
-    bot.reply(message, 'Hello!');
+controller.hears('[Cc]heck the (.*) file', 'mention', function (bot, message) {
+    bot.reply(message, 'Ok!');
 });
 
 
