@@ -81,7 +81,7 @@ controller.on('rtm_close', function (bot) {
  */
 // BEGIN EDITING HERE!
 
-controller.hears('[Cc]heck the (.*) file', 'mention', function (bot, message) {
+controller.hears('Check the file', 'mention', function (bot, message) {
     bot.reply(message, 'Ok!');
 });
 
